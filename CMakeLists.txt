@@ -33,8 +33,17 @@ set(PROJECT_SOURCES
         src/mainwindow.cpp
         src/mainwindow.h
         src/mainwindow.ui
-        src/audio/audiomanger.cpp
-        src/audio/audiomanger.h
+        src/globaldef.h
+        src/audio/audiomanager.cpp
+        src/audio/audiomanager.h
+        src/audio/audiolist.cpp
+        src/audio/audiolist.h
+        src/audio/audioplayer.cpp
+        src/audio/audioplayer.h
+        src/audio/audiodevicectrl.cpp
+        src/audio/audiodevicectrl.h
+        src/audio/audiochannel.cpp
+        src/audio/audiochannel.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "audio/audiomanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,5 +18,14 @@ public:
 
 private:
     Ui::MainWindow *ui;
+signals:
+    void sigAddFile(FileInfo);
+    void sigRemoveFile(int index);
+    void sigPlay(int index);
+    void sigStop();
+    void sigPause();
+    void sigLeftChannle();
+    void sigRightChannle();
+    void sigDoubleChannle();
 };
 #endif // MAINWINDOW_H
